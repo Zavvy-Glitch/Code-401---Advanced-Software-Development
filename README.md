@@ -4,7 +4,7 @@
  ## Table of Contents
    - [Reading 1: Node EcoSystem, TDD, CI/CD](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Reading01.md)
    - [Reading 2: Express](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings02.md)
-   - [Reading 3: ]()
+   - [Reading 3: ](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings03.md)
    - [Reading 4: ]()
    - [Reading 6: ]()
    - [Reading 7: ]()
