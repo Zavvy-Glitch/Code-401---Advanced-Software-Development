@@ -6,7 +6,7 @@
    - [Reading 2: Express](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings02.md)
    - [Reading 3: Express REST API](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings03.md)
    - [Reading 4: Data Modeling](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings04.md)
-   - [Reading 6: ](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings06.md)
+   - [Reading 6: Authentication](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings06.md)
    - [Reading 7: ]()
    - [Reading 8: ]()
    - [Reading 9: ]()
