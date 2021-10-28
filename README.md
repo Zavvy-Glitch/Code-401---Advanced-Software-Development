@@ -8,7 +8,7 @@
    - [Reading 4: Data Modeling](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings04.md)
    - [Reading 6: Authentication](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings06.md)
    - [Reading 7: Bearer Authorization](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings07.md)
-   - [Reading 8: ]()
+   - [Reading 8: Access Control (ACL)]()
    - [Reading 9: ]()
    - [Reading 11: ]()
    - [Reading 12: ]()
