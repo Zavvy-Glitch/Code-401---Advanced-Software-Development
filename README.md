@@ -9,7 +9,7 @@
    - [Reading 6: Authentication](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings06.md)
    - [Reading 7: Bearer Authorization](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings07.md)
    - [Reading 8: Access Control (ACL)]()
-   - [Reading 9: ]()
+   - [Reading 9: Authorization / Authentication](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings09.md)
    - [Reading 11: ]()
    - [Reading 12: ]()
    - [Reading 13: ]()
