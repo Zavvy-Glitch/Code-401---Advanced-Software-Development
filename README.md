@@ -12,7 +12,7 @@
    - [Reading 9: Authorization / Authentication](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings09.md)
    - [Reading 11: Event Driven Application](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings11.md)
    - [Reading 12: Socket.io](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings12.md)
-   - [Reading 13: ]()
+   - [Reading 13: Trees](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings13.md)
    - [Reading 14: ]()
    - [Reading 16: ]()
    - [Reading 17: ]()
