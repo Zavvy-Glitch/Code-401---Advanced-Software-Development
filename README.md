@@ -13,5 +13,5 @@
    - [Reading 11: Event Driven Application](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings11.md)
    - [Reading 12: Socket.io](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings12.md)
    - [Reading 13: Trees](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings13.md)
-   - [Reading 16: AWS-Cloud Servers]()
+   - [Reading 16: AWS-Cloud Servers](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings16.md)
    - [Reading 17: ]()
