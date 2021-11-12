@@ -16,3 +16,4 @@
    - [Reading 16: AWS-Cloud Servers](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings16.md)
    - [Reading 17: AWS: S3 & Lambda](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings17.md)
    - [Reading 18: AWS: API, Dynamo, & Lambda](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings18.md)
+   - [Reading 19: AWS: Events with SNS & SQS](https://github.com/Zavvy-Glitch/Code-401---Advanced-Software-Development/blob/main/Readings19.md)
