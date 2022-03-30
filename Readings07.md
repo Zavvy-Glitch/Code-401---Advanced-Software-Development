@@ -1,5 +1,28 @@
 # Bearer Authorization
 
+## JWT (JSON Web Token)
+   - What is it?
+        - JWT is an open standard(anyone can use it) defining a compact and self-contained way to securily transmit information.
+        - JWT's can be signed with a secret(HMAC algorithm) or public/private key pair using RSA or ECDSA
+   - When should you use JWT's?
+        - Information Exhange: when you need to securely transmit information between parties.
+        - Authorization: when you only need a single user to access specific routes, services, content, resources.
+   - JWT Structure:
+        - Header: consists of 2 parts (typically) : the type of token and the signing algorithm
+             - ```javascript
+               {
+                "alg":"HS256,
+                "typ":"JWT"
+               } 
+               ``` 
+        - Payload: consists of the claims. Claims are statements about an entity(user) and other additional data.
+            - Three Types:
+            - Registered
+            - Public
+            - Private 
+        - Signature: will take an encoded header, the encoded payload, a secret, which ever algorithm specified in the header, and then sign it.
+            - This is used to verify the message sent wasn't changed in transmission and, in the case of tokens signed with a private party it can verify the sender of the JWT to ensure they are who they say they are.
+
 Steps:
     - Ask the client if they want to sign in via a third party
     - Make a request to a third-party API endpoint
@@ -25,15 +48,7 @@ Steps:
     ----------------------- | -----------
     Access Token            | Access tokens are used in token-based authentication to allow an application to access an API
     
- ## Preview
-    - Which 3 things had you heard about previously and now have better clarity on?
-      - Payload
-      - Signature
-      - Bearer
-    - Which 3 things are you hoping to learn more about in the upcoming lecture/demo?
-      - Ways to secure tokens
-      - How hash-ing works
-      - How does the front end compare information to authorize a user?
+
    
     
     
