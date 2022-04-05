@@ -1,23 +1,22 @@
-# Event Driven Applications
+# Event Driven Programming
 
-1. Why is access control important?
-    - Access controls limit access to information and information processing systems. When implemented effectively, they mitigate the risk of information being accessed without the appropriate authorisation, unlawfully and the risk of a data breach.
+## Overview
+   Whenever you interact with a webpage, you're creating events. When you click on a button, EVENT! When you press a key, EVENT! These events have associated functions that execute to make a change to the interface in some way.
+   
+   - Event Driven Programming uses the following concepts:
+        - Event Handlers (callback function): will be called with an event is triggered
+        - A Main Loop: this listens for event triggers & calls associated event handler for event.
 
-2. Describe an application that would need access control.
-  - Banking Applications
-  - Shopping Applications
+## EventEmitter
+   - Node.js provides a module called EventEmitter.
+        - Allows the incorporation of Event-Driven-Programming.
+        - Checkout [EventEmitter2](https://github.com/EventEmitter2/EventEmitter2) & [EventEmitter3](https://github.com/primus/eventemitter3)
 
-3. What is a role used for?
-  - Roles are used to assign specific users different accessabilities to an application.
+## Object Oriented Programming + Event Driven Programming
+   - Object Oriented approach promotes the idea that all behavior of a single unit to be handled from code from that specific unit.
+   - We can make use of Event Driven Programming by registering event listeners that will reverse the flow of communication between objects.
+        - Rather than needing to reach inside another object to trigger a function, instead we can just emit events and whichever objects are listening to that event will process it how they have been told to.
 
-4. Why is role based access control more scalable than discretionary or mandatory access control?
-  - They reduce the tasks of an administrator or authorities when users take on different roles in an organization and need to be assigned different access rights or privileges based on these roles. RBAC is a very expressive and flexible access control mechanism that makes it possible to have security policies based on the principle of least privilege, static and dynamic separation of duties, conflicts between roles and permissions, and many more.
 
+Resource: [Node Events](https://nodejs.org/api/events.html)
 
-## Document the following Vocabulary Terms: 
-
-  - Authorization : The process of verifying what a user has access to.
-
-  - Role Based Access Control : Restricts network access based on a person's role within an organization and has become one of the main methods for advanced access control.
-
-  - Capabilities : Are the speed, reliability, adaptability, storage and accuracy of computer systems.
