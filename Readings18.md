@@ -1,17 +1,28 @@
-# AWS: API, Dynamo and Lambda
-
-- What are serverless functions?
-  - A serverless function is a programmatic function written by a software developer for a single purpose. It's then hosted and maintained on infrastructure by cloud computing companies. These companies take care of code maintenance and execution so that developers can deploy new code faster and easier.
+# AWS: API Gateway / DynamoDB
   
-- If you were to create a system that emulated Lambda functions, how would you do it?
-  - Implement various node modules that have generic functionality (ie: CRUD's) - I'd assume I'd just have to follow a minor scheme to tell it to input certain data into certain spots and that's it? I'm not too sure, TBH.
+  ## API Gateway
+  
+  - What is Amazon API Gateway?
+    - Amazon API Gateway is a managed service that allows developers to define the HTTP endpoints of a REST API or a WebSocket API and connect those endpoints with the corresponding backend business logic. It also handles authentication, access control, monitoring, and tracing of API requests.
+  - How does API Gateway work?
+    - API Gateway sits between the backend services of your API and your API’s users, handling the HTTP requests to your API endpoints and routing them to the correct backends. It provides a set of tools that help you manage your API definitions and the mappings between endpoints and their respective backend services. It can also generate API references from your definitions and make them available to your users as API documentation.
 
-- Describe how a CDN works
-  - At its core, a CDN is a network of servers linked together with the goal of delivering content as quickly, cheaply, reliably, and securely as possible. In order to improve speed and connectivity, a CDN will place servers at the exchange points between different networks.
+![apiGateway](https://user-images.githubusercontent.com/84699682/163300527-2731ec12-f1c0-40f7-99ed-9b044631f319.jpg)
 
-| Terminology | Definitions |
-| ----------- | ----------- |
-| Serverless Function | A serverless function is a programmatic function written by a software developer for a single purpose. It's then hosted and maintained on infrastructure by cloud computing companies. These companies take care of code maintenance and execution so that developers can deploy new code faster and easier. | 
-| Cloud Storage | Cloud storage is a cloud computing model that stores data on the Internet through a cloud computing provider who manages and operates data storage as a service. It’s delivered on demand with just-in-time capacity and costs, and eliminates buying and managing your own data storage infrastructure. This gives you agility, global scale and durability, with “anytime, anywhere” data access. |
-| CDN | At its core, a CDN is a network of servers linked together with the goal of delivering content as quickly, cheaply, reliably, and securely as possible. In order to improve speed and connectivity, a CDN will place servers at the exchange points between different networks. |
+  ## DynamoDB
+  
+  - What is DynamoDB?
+    - DynamoDB is a hosted NoSQL database offered by Amazon Web Services (AWS)
+        - Offers:
+            - reliable performance even as it scales;
+            - a managed experience, so you won't be SSH-ing into servers to upgrade the crypto libraries;
+            - a small, simple API allowing for simple key-value access as well as more advanced query patterns.
+    - DynamoDB is a particularly good fit for the following use cases:
+        - Applications with large amounts of data and strict latency requirements
+        - Serverless applications using AWS Lambda
+        - Data Sets with simple, known access patterns
 
+            - Core Building Blocks of DynamoDB
+              - Tables: a grouping of data records. For example, you might have a Users table to store data about your users, and an Orders table to store data about your users' orders.
+              - Items: a single data record in a table. Each item in a table is uniquely identified by the stated primary key of the table.
+              - Attributes: pieces of data attached to a single item. This could be a simple Age attribute that stores the age of a user.
