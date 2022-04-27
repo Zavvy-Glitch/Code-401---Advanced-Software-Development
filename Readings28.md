@@ -1,5 +1,73 @@
 # Component Lifecycle / Hook
+[Source Information: Using the Effect Hook - React](https://reactjs.org/docs/hooks-effect.html)
+## Using the Effect Hook
+- Effect Hook lets you perform side effects
+- Data fetching, setting up a subscription, and manually changing the DOM in React components are all examples of side effects
+- There are two common kinds of side effects in React components: those that don’t require cleanup, and those that do
+    - Effects Without Cleanup
+        - Network requests, manual DOM mutations, and logging are common examples of effects that don’t require a cleanup
+        - We can run them and immediately forget about them
+            - Classes:
+                - We typically want to perform our effects after React has updated the DOM
+                - Why in React classes, we put side effects into componentDidMount and componentDidUpdate
+                - Example for Classes:
+                    ``` javascript
+                    class Example extends React.Component {
+                        constructor(props) {
+                            super(props);
+                            this.state = {
+                            count: 0
+                            };
+                        }
 
+                        componentDidMount() {
+                            document.title = `You clicked ${this.state.count} times`;
+                        }
+                        componentDidUpdate() {
+                            document.title = `You clicked ${this.state.count} times`;
+                        }
+
+                        render() {
+                            return (
+                            <div>
+                                <p>You clicked {this.state.count} times</p>
+                                <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+                                Click me
+                                </button>
+                            </div>
+                            );
+                        }
+                        }
+                    ```
+               - Example for Hooks:
+                    ``` javascript
+                    import React, { useState, useEffect } from 'react';
+
+                    function Example() {
+                        const [count, setCount] = useState(0);
+
+                        useEffect(() => {
+                            document.title = `You clicked ${count} times`;
+                        });
+
+                        return (
+                            <div>
+                                <p>You clicked {count} times</p>
+                                <button onClick={() => setCount(count + 1)}>
+                                    Click me
+                                </button>
+                             </div>
+                            );
+                        }
+                        
+                - What does useEffect do?
+                    - By using this Hook, you tell React that your component needs to do something after render
+                    - React will remember the function you passed and call it later after performing the DOM updates
+
+                - Why is useEffect called inside a component?
+                    -  Placing useEffect inside the component lets us access the count state variable right from the effect
+                    -  We don’t need a special API to read it
+                    -  
 - Why do we not need more `.html` pages in a multi-page React app?
     - React is not designed to develop multi-page websites. So, we need to create multiple routes to handle multiple views.
 - If we wanted a component to show up on every page, where would we put it and why?
