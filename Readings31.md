@@ -113,3 +113,50 @@ Before deciding to use Context:
       {props.userLink}
       ```
       
+## Context API - Behaviors
+
+  - `React.createContext()` : <- this creates a Context Object. When react renders a component that uses this Context object, it will read the current context value from the closest matching `Provider` above it in the tree
+    - Example:
+      ``` javascript
+      const MyContext = React.createContext(defaultValue);
+      ```
+  - `Context.Provider()` : <- this allows consuming components to subscribe to context changes
+  - *NOTE: Provider components accept a `value` property that will be passed to consuming components / decendants of this provider. One provider can be connected to many consumers. 
+    - Example:
+      ``` javascript
+      <MyContext.Provider value={/* some value */}>
+      ```
+      
+  - Caveats
+    - Unintentional renders may be triggered in consumers when a provider's parent re-renders.  
+      - Example: rerenders all consumers every time the Provider re-renders because a new object is createad for value
+        ``` javascript
+        class App extends React.Component {
+          render() {
+            return (
+              <MyContext.Provider value={{something: 'something'}}>
+               <Toolbar />
+             </MyContext.Provider>
+           );
+          }
+        }
+        ```
+       - Example: To Fix this, you'll need to lift the value into the Parent's state
+          ``` javascript
+          class App extends React.Component {
+            constructor(props) {
+             super(props);
+              this.state = {
+               value: {something: 'something'},
+              };
+            }
+
+            render() {
+              return (
+                <MyContext.Provider value={this.state.value}>
+                  <Toolbar />
+               </MyContext.Provider>
+             );
+            }
+          }
+          ```
