@@ -1,4 +1,9 @@
-# Application State with Redux
+# Redux
+
+## Fundamentals
+
+- Redux is a `predictable` state container for JavaScript Apps.
+- 
 
 - What are the advantages of storing tokens in "Cookies" vs "Local Storage"?
   - It's just less convenient for the attacker because they can't read the content of the token although they rarely have to. It might also be more advantageous for the attacker to attack using victim's browser (by just sending that HTTP Request) rather than using the attacker's machine. [src: DEV](https://dev.to/cotter/localstorage-vs-cookies-all-you-need-to-know-about-storing-jwt-tokens-securely-in-the-front-end-15id)
