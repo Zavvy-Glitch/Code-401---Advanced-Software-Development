@@ -1,5 +1,42 @@
 # Redux - Combined Reducers
 
+What are they?
+  - "it is a utility function to simplify the most common use case when writing Redux reducers" - redux.js.org
+
+## Defining State Shape:
+  - Two Ways to define `initial state`
+    - `createStore` function can take `preloadedState` as it's second argument.
+      - intended to initialize the store with state stored from else where. IE: localStorage.
+    - other way is for the root reducer to return initial state value when the argument is `undefined`
+  - `combineReducers` takes in an object full of reducer functions, and creates a function that spits out a corresponding state object with matching keys.
+      - example:
+      ```javascript
+      // reducers.js
+      export default theDefaultReducer = (state = 0, action) => state
+      export const firstNamedReducer = (state = 1, action) => state
+      export const secondNamedReducer = (state = 2, action) => state
+
+      // rootReducer.js
+      import { combineReducers, createStore } from 'redux'
+
+      import theDefaultReducer, {
+        firstNamedReducer,
+        secondNamedReducer
+      } from './reducers'
+
+      // Use ES6 object literal shorthand syntax to define the object shape
+      const rootReducer = combineReducers({
+        theDefaultReducer,
+        firstNamedReducer,
+        secondNamedReducer
+      })
+
+      const store = createStore(rootReducer)
+      console.log(store.getState())
+      // {theDefaultReducer : 0, firstNamedReducer : 1, secondNamedReducer : 2}
+      ```
+      
+
 - Why choose Redux instead of the Context API for global state?
   - Redux would allow you to persist state in a local storage straight out of the box, provides full inspection and control capabilities to the development tooling so that product developers can build custom tools for their apps, pass action objects over the network to implement collaborative environments without dramatic changes to how the code is written.
 
